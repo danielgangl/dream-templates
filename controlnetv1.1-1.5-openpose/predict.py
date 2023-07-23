@@ -38,7 +38,7 @@ class Predictor(BasePredictor):
 
         print("Loading pose...")
         self.openpose = OpenposeDetector.from_pretrained(
-            "lllyasviel/ControlNet-v1-1",
+            "lllyasviel/Annotators",
             cache_dir=settings.MODEL_CACHE,
         )
 
