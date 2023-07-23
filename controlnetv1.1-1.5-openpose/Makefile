@@ -9,7 +9,7 @@ push:
 		echo "Controlnet weights do not exist, make download"; \
 		exit 1; \
 	fi
-	cog push r8.im/anotherjesse/controlnet-1.5-pose-template
+	cog push r8.im/danielgangl/controlnetv1.1-1.5-pose-template
 
 samples:
 	if ! test -d weights; then \
