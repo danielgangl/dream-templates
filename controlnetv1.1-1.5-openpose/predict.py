@@ -128,7 +128,7 @@ class Predictor(BasePredictor):
         if control_image is None:
             return None
 
-        return self.openpose(control_image)
+        return self.openpose(control_image, 512, 512, True)
 
     @torch.inference_mode()
     def predict(
