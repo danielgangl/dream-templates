@@ -15,7 +15,7 @@ from controlnet_aux import OpenposeDetector
 
 
 OpenposeDetector.from_pretrained(
-    "lllyasviel/ControlNet",
+    "lllyasviel/ControlNet-v1-1",
     cache_dir=settings.MODEL_CACHE,
 )
 
