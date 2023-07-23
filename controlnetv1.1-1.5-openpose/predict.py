@@ -129,7 +129,12 @@ class Predictor(BasePredictor):
             return None
 
         return self.openpose(
-            control_image, include_body=True, include_hand=True, include_face=True
+            control_image,
+            detect_resolution=768,
+            image_resolution=768,
+            include_body=True,
+            include_hand=True,
+            include_face=True,
         )
 
     @torch.inference_mode()
