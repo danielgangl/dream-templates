@@ -134,7 +134,7 @@ class Predictor(BasePredictor):
             image_resolution=768,
             include_body=True,
             include_hand=True,
-            include_face=True,
+            include_face=False,
         )
 
     @torch.inference_mode()
